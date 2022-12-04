@@ -8,6 +8,7 @@ namespace StringCacheAPI
         //TODO Add error handling
         //TODO Add logging
         //TODO Add tests
+        //TODO Add connection configuration
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
