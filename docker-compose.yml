@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  stringcacheapi:
+    image: ${DOCKER_REGISTRY-}stringcacheapi
+    build:
+      context: .
+      dockerfile: StringCacheAPI/Dockerfile
+
+  redis:
+    image: redis:latest
+    ports:
+      - 6379:6379
